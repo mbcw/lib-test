@@ -1,6 +1,6 @@
 {
 	"name": "lib-test-for-mbcwang",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "mbcwang",
 	"license": "ISC",
 	"description": "This is a test lib for practice.",
@@ -22,7 +22,6 @@
 	"scripts": {
 		"rollup": "rollup -c --bundleConfigAsCjs"
 	},
-
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^25.0.7",
 		"@rollup/plugin-node-resolve": "^15.2.3",
@@ -36,7 +35,6 @@
 		"tslib": "^2.6.2",
 		"typescript": "^5.3.3"
 	},
-
 	"peerDependencies": {
 		"react": "^18.0.0"
 	}
