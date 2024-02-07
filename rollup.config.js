@@ -12,6 +12,7 @@ const packageJson = require("./package.json");
 export default [
     {
         input: "src/index.ts",
+
         output: [
             {
                 file: packageJson.main,
@@ -19,6 +20,7 @@ export default [
                 sourcemap: true,
             },
         ],
+
         plugins: [
             // New
             typescript(),
@@ -33,8 +35,15 @@ export default [
     },
     {
         input: "dist/cjs/types/src/index.d.ts",
-        output: [{ file: "dist/index.d.ts", format: "esm" }],
+
+        output: [{
+            file: "dist/index.d.ts",
+            format: "esm",
+            sourcemap: true,
+        }],
+
         plugins: [dts.default()],
+
         external: [/\.css$/],
     },
 ];

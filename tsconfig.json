@@ -15,9 +15,13 @@
 		"declaration": true,
 		"declarationDir": "types",
 		"sourceMap": true,
-		"outDir": "dist",
+		"outDir": "./dist",
 		"moduleResolution": "Node",
 		"allowSyntheticDefaultImports": true,
 		"emitDeclarationOnly": true,
-	}
+	},
+
+	"exclude": [
+		"**/demo",
+	]
 }
